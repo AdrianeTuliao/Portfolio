@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar Adriane Tuliao /Portfolio</title>
+    <style>
+        body {
+            background: #1a1a1a; 
+            color: #d3d3d3; 
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1, p {
+            color: #f0f0f0; 
+        }
+        .menu-bar {
+            background: #2c2c2c; 
+            color: #e0e0e0;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-bar a {
+            text-decoration: none;
+            color: #e0e0e0;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .menu-bar a:hover {
+            background-color: #4a4a4a; 
+        }
+        .profile-section {
+            background: #333333; 
+            color: #e0e0e0;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 10px;
+        }
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .buttons-container a {
+            background: #444444; 
+            padding: 10px 50px; 
+            margin: 0 10px;
+            text-decoration: none;
+            color: #e0e0e0;
+            border-radius: 5px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease; 
+        }
+        .buttons-container a:hover {
+            background-color: #5a5a5a; 
+        }
+        .buttons-container a:active {
+            animation: click-animation 0.500s ease forwards; 
+        }
+
+        @keyframes click-animation {
+            0% {
+                transform: scale(1);
+                background-color: #444444;
+            }
+            50% {
+                transform: scale(1.1);
+                background-color: #666666;
+            }
+            100% {
+                transform: scale(1);
+                background-color: #444444;
+            }
+        }
+
+        .footer {
+            background: #2c2c2c; 
+            color: #e0e0e0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        .footer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        
+        @media (max-width: 1024px) {
+            .profile-section {
+                width: 80%; 
+            }
+            .buttons-container a {
+                padding: 10px 40px; 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                width: 90%; 
+            }
+            .buttons-container {
+                flex-direction: column; 
+            }
+            .buttons-container a {
+                padding: 10px 30px; 
+                width: 80%; 
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-section img {
+                width: 100px; /* Reduce image size for smaller screens */
+                height: 100px;
+            }
+            .buttons-container a {
+                padding: 10px 20px; /* Further reduce padding for smaller screens */
+                font-size: 14px; /* Reduce font size for buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <img src="profile-image.jfif" alt="Profile Picture">
+        <h1>Adriane Tuliao</h1>
+        <p>Welcome to my portfolio! I am currently pursuing a Bachelor of Science in Information Technology. I am committed to putting in the effort required to achieve my goals and continuously strive to exceed expectations. As an enthusiastic learner, I'm always eager to expand my knowledge and skills in the ever-evolving field of technology.</p>
+        
+        <div class="buttons-container">
+            <a href="Resume.html">Resume</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Education.html">Education</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright © Adriane Tuliao 2024</p>
+    </div>
+</body>
+</html>
